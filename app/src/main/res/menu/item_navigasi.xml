@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="all">
+        <item
+            android:id="@+id/laporanMenu"
+            android:title="@string/laporan"
+            android:icon="@drawable/laporan"/>
+    </group>
+
+    <item
+        android:id="@+id/navigasi2"
+        android:title="@string/lainnya">
+        <menu>
+            <item
+                android:id="@+id/aboutMenu"
+                android:title="@string/about"
+                android:icon="@drawable/about" />
+            <item
+                android:id="@+id/helpMenu"
+                android:title="@string/help" />
+        </menu>
+    </item>
+
+</menu>

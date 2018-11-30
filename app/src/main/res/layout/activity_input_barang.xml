@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#1E8BC3"
+    tools:context="phantomshadow.example.com.kedaikeun.ui.InputBarang">
+
+
+    <TextView
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Input Barang"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:gravity="center"/>
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/cashier"
+        android:layout_marginBottom="20dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/radioMakanan"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Makanan"
+                    android:textColor="#fff"/>
+                <RadioButton
+                    android:id="@+id/radioMinuman"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Minuman"
+                    android:textColor="#fff"/>
+                <RadioButton
+                    android:id="@+id/radioLainnya"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lainnya"
+                    android:textColor="#fff"/>
+        </RadioGroup>
+
+
+    <EditText
+        android:id="@+id/editTextBarang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="#fff"
+        android:textColorHint="#fff"
+        android:textColor="#fff"
+        android:hint="Nama Barang" />
+
+    <EditText
+        android:id="@+id/editTextTakaran"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="#fff"
+        android:textColorHint="#fff"
+        android:textColor="#fff"
+        android:hint="Takaran / Berat / Banyak" />
+
+    <EditText
+        android:id="@+id/editTextHarga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#fff"
+        android:textColorHint="#fff"
+        android:textColor="#fff"
+        android:layout_marginBottom="5dp"
+        android:inputType="number"
+        android:hint="Harga"
+        tools:targetApi="lollipop" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/radius_button"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:textColor="#fff" />
+    </RelativeLayout>
+
+</LinearLayout>

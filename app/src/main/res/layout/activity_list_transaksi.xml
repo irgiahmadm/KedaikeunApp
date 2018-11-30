@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/namaBarangDiTransaksi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="Fanta"
+        android:padding="5dp"
+        android:textColor="#000"
+        />
+    <TextView
+        android:id="@+id/banyakBarangDiTransaksi"
+        android:layout_below="@+id/namaBarangDiTransaksi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        android:textColor="#000"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp" />
+    <TextView
+        android:id="@+id/textKaliTransaksi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="x"
+        android:textColor="#000"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/banyakBarangDiTransaksi"
+        android:layout_below="@+id/namaBarangDiTransaksi"
+        android:layout_toEndOf="@id/banyakBarangDiTransaksi"
+        android:layout_marginStart="5dp" />
+    <TextView
+        android:id="@+id/hargaBarangDiTransaksi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5000"
+        android:textColor="#000"
+        android:layout_below="@+id/namaBarangDiTransaksi"
+        android:layout_toRightOf="@+id/textKaliTransaksi"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toEndOf="@+id/textKaliTransaksi" />
+    <TextView
+        android:id="@+id/totalSubItemTransaksi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10000"
+        android:textColor="#000"
+        android:layout_below="@+id/namaBarangDiTransaksi"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
